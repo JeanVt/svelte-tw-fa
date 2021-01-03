@@ -39,23 +39,6 @@
 
     onMount(async () => {
         parseTextValue();
-
-        let dates = [
-        "2021/01/04",
-        "2021/1/4",
-        "20210104",
-        "04/01/2021",
-        "4-1-2021",
-        "4/1/21",
-        "04-01",
-        "4/1",
-        "4",
-        "04"]
-        for(let d of dates) {
-            console.log(d);
-            textValue = d;
-            parseTextValue();
-        }
     });
 
     $: {
@@ -209,12 +192,12 @@
         {#if tooltipVisible}
             <div class="tooltip" transition:fade="{{duration: 200}}">
                 <p>Example of input:</p>
-                <ul>
+                <table>
                     <tr><td>Today </td><td>0 or double-click</td></tr>
                     <tr><td>Full date </td><td>DD/MM/YYYY</td></tr>
-                    <tr><td>Partial date </td><td>DD or <em>DD/MM</td></tr>
+                    <tr><td>Partial date </td><td>DD or DD/MM</td></tr>
                     <tr><td>Diff. from today </td><td>+n or -n</td></tr>
-                </ul>
+                </table>
             </div>
         {/if}
     </label>
