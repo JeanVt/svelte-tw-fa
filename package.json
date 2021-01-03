@@ -1,6 +1,6 @@
 {
   "name": "@jeanvt/svelte-tw-fa",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Custom components using svelte, tailwind and fontawesome.",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",

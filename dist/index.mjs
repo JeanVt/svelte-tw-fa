@@ -2520,4 +2520,4 @@ class DatePicker extends SvelteComponent {
 	}
 }
 
-export { DatePicker };
+export default DatePicker;

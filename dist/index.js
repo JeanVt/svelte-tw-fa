@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@fortawesome/free-solid-svg-icons')) :
-    typeof define === 'function' && define.amd ? define(['exports', '@fortawesome/free-solid-svg-icons'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.TwFa = {}, global.freeSolidSvgIcons));
-}(this, (function (exports, freeSolidSvgIcons) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@fortawesome/free-solid-svg-icons')) :
+    typeof define === 'function' && define.amd ? define(['@fortawesome/free-solid-svg-icons'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.TwFa = factory(global.freeSolidSvgIcons));
+}(this, (function (freeSolidSvgIcons) { 'use strict';
 
     function noop() { }
     const identity = x => x;
@@ -2524,8 +2524,6 @@
     	}
     }
 
-    exports.DatePicker = DatePicker;
-
-    Object.defineProperty(exports, '__esModule', { value: true });
+    return DatePicker;
 
 })));
