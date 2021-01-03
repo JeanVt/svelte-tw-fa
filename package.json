@@ -1,10 +1,26 @@
 {
   "name": "@jeanvt/svelte-tw-fa",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom components using svelte, tailwind and fontawesome.",
-  "main": "index.js",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "rollup": "^2.0.0",
+    "rollup-plugin-svelte": "^6.0.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "svelte": "^3.0.0",
+    "svelte-fa": "^2.2.0",
+    "svelte-outside-click": "^1.1.1",
+    "svelte-preprocess": "^4.6.1",
+    "tailwindcss": "^2.0.2",
+    "typeface-open-sans": "^1.1.13",
+    "date-format-parse": "^0.2.6"
   },
   "repository": {
     "type": "git",
