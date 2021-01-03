@@ -1,6 +1,6 @@
 {
   "name": "@jeanvt/svelte-tw-fa",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Custom components using svelte, tailwind and fontawesome.",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
@@ -20,7 +20,9 @@
     "svelte-preprocess": "^4.6.1",
     "tailwindcss": "^2.0.2",
     "typeface-open-sans": "^1.1.13",
-    "date-format-parse": "^0.2.6"
+    "date-format-parse": "^0.2.6",
+    "postcss": "^8.2.2",
+    "postcss-load-config": "^3.0.0"
   },
   "repository": {
     "type": "git",

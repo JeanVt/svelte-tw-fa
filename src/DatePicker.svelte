@@ -140,10 +140,8 @@
 
 <style>
     .calendarDate {
-        @apply text-center w-6 h-5 p-0.5 cursor-pointer bg-gray-50;
-    }
-    .calendarDate :hover {
-        @apply bg-blue-500 text-white;
+        @apply text-center w-6 h-5 p-0.5 cursor-pointer bg-gray-50
+                hover:bg-blue-500 hover:text-white;
     }
     .calendarHolidayDate {
         @apply text-pink-400;
@@ -159,10 +157,8 @@
     }
     .calendarArrowButton {
         @apply  p-0.5 cursor-pointer 
-                border-opacity-0 border-2 border-blue-900;
-    }
-    .calendarArrowButton :hover {
-        @apply  border-opacity-100 bg-blue-200;
+                border-opacity-0 border-2 border-blue-900
+                hover:border-opacity-100 hover:bg-blue-200;
     }
     .tooltip {
         @apply absolute w-full -right-full -top-full bg-blue-50 text-xs p-2 border-2 border-blue-200 bg-opacity-80;

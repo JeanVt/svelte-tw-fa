@@ -1612,8 +1612,8 @@ function clickOutside(node, onEventFunction) {
 
 function add_css() {
 	var style = element("style");
-	style.id = "svelte-11hbmey-style";
-	style.textContent = ".calendarDate.svelte-11hbmey.svelte-11hbmey{@apply text-center w-6 h-5 p-0.5 cursor-pointer bg-gray-50;}.calendarDate.svelte-11hbmey .svelte-11hbmey:hover{@apply bg-blue-500 text-white;}.calendarHolidayDate.svelte-11hbmey.svelte-11hbmey{@apply text-pink-400;}.calendarPreviousMonthDate.svelte-11hbmey.svelte-11hbmey{@apply text-gray-400;}.calendarSelectedDate.svelte-11hbmey.svelte-11hbmey{@apply bg-blue-500 text-white;}.calendarTodayDate.svelte-11hbmey.svelte-11hbmey{@apply rounded-full border-2 border-blue-400;}.calendarArrowButton.svelte-11hbmey.svelte-11hbmey{@apply  p-0.5 cursor-pointer \n                border-opacity-0 border-2 border-blue-900;}.calendarArrowButton.svelte-11hbmey .svelte-11hbmey:hover{@apply  border-opacity-100 bg-blue-200;}.tooltip.svelte-11hbmey.svelte-11hbmey{@apply absolute w-full -right-full -top-full bg-blue-50 text-xs p-2 border-2 border-blue-200 bg-opacity-80;}.calendar.svelte-11hbmey select.svelte-11hbmey{-moz-appearance:none;-webkit-appearance:none;background:none;text-align-last:center}.calendar.svelte-11hbmey input.svelte-11hbmey::-webkit-outer-spin-button,.calendar.svelte-11hbmey input.svelte-11hbmey::-webkit-inner-spin-button{-webkit-appearance:none;background:none}.calendar.svelte-11hbmey input[type=number].svelte-11hbmey{-moz-appearance:textfield;background:none}";
+	style.id = "svelte-19l68in-style";
+	style.textContent = ".calendarDate.svelte-19l68in.svelte-19l68in{--tw-bg-opacity:1;background-color:rgba(249, 250, 251, var(--tw-bg-opacity))}.calendarDate.svelte-19l68in.svelte-19l68in:hover{--tw-bg-opacity:1;background-color:rgba(59, 130, 246, var(--tw-bg-opacity))}.calendarDate.svelte-19l68in.svelte-19l68in{cursor:pointer;height:1.25rem;padding:0.125rem;text-align:center}.calendarDate.svelte-19l68in.svelte-19l68in:hover{--tw-text-opacity:1;color:rgba(255, 255, 255, var(--tw-text-opacity))}.calendarDate.svelte-19l68in.svelte-19l68in{width:1.5rem}.calendarHolidayDate.svelte-19l68in.svelte-19l68in{--tw-text-opacity:1;color:rgba(244, 114, 182, var(--tw-text-opacity))}.calendarPreviousMonthDate.svelte-19l68in.svelte-19l68in{--tw-text-opacity:1;color:rgba(156, 163, 175, var(--tw-text-opacity))}.calendarSelectedDate.svelte-19l68in.svelte-19l68in{--tw-bg-opacity:1;background-color:rgba(59, 130, 246, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(255, 255, 255, var(--tw-text-opacity))}.calendarTodayDate.svelte-19l68in.svelte-19l68in{--tw-border-opacity:1;border-color:rgba(96, 165, 250, var(--tw-border-opacity));border-radius:9999px;border-width:2px}.calendarArrowButton.svelte-19l68in.svelte-19l68in:hover{--tw-bg-opacity:1;background-color:rgba(191, 219, 254, var(--tw-bg-opacity))}.calendarArrowButton.svelte-19l68in.svelte-19l68in{--tw-border-opacity:1;border-color:rgba(30, 58, 138, var(--tw-border-opacity));--tw-border-opacity:0}.calendarArrowButton.svelte-19l68in.svelte-19l68in:hover{--tw-border-opacity:1}.calendarArrowButton.svelte-19l68in.svelte-19l68in{border-width:2px;cursor:pointer;padding:0.125rem}.tooltip.svelte-19l68in.svelte-19l68in{--tw-bg-opacity:1;background-color:rgba(239, 246, 255, var(--tw-bg-opacity));--tw-bg-opacity:0.8;--tw-border-opacity:1;border-color:rgba(191, 219, 254, var(--tw-border-opacity));border-width:2px;font-size:0.75rem;line-height:1rem;padding:0.5rem;position:absolute;top:-100%;right:-100%;width:100%}.calendar.svelte-19l68in select.svelte-19l68in{-moz-appearance:none;-webkit-appearance:none;background:none;text-align-last:center}.calendar.svelte-19l68in input.svelte-19l68in::-webkit-outer-spin-button,.calendar.svelte-19l68in input.svelte-19l68in::-webkit-inner-spin-button{-webkit-appearance:none;background:none}.calendar.svelte-19l68in input[type=number].svelte-19l68in{-moz-appearance:textfield;background:none}";
 	append(document.head, style);
 }
 
@@ -1637,7 +1637,7 @@ function get_each_context_2(ctx, list, i) {
 	return child_ctx;
 }
 
-// (209:8) {#if tooltipVisible}
+// (251:8) {#if tooltipVisible}
 function create_if_block_1$1(ctx) {
 	let div;
 	let div_transition;
@@ -1647,13 +1647,13 @@ function create_if_block_1$1(ctx) {
 		c() {
 			div = element("div");
 
-			div.innerHTML = `<p class="svelte-11hbmey">Example of input:</p> 
-                <ul class="svelte-11hbmey"><tr class="svelte-11hbmey"><td class="svelte-11hbmey">Today </td><td class="svelte-11hbmey">0 or double-click</td></tr> 
-                    <tr class="svelte-11hbmey"><td class="svelte-11hbmey">Full date </td><td class="svelte-11hbmey">DD/MM/YYYY</td></tr> 
-                    <tr class="svelte-11hbmey"><td class="svelte-11hbmey">Partial date </td><td class="svelte-11hbmey">DD or <em class="svelte-11hbmey">DD/MM</em></td></tr> 
-                    <tr class="svelte-11hbmey"><td class="svelte-11hbmey">Diff. from today </td><td class="svelte-11hbmey">+n or -n</td></tr></ul>`;
+			div.innerHTML = `<p>Example of input:</p> 
+                <table><tr><td>Today </td><td>0 or double-click</td></tr> 
+                    <tr><td>Full date </td><td>DD/MM/YYYY</td></tr> 
+                    <tr><td>Partial date </td><td>DD or DD/MM</td></tr> 
+                    <tr><td>Diff. from today </td><td>+n or -n</td></tr></table>`;
 
-			attr(div, "class", "tooltip svelte-11hbmey");
+			attr(div, "class", "tooltip svelte-19l68in");
 		},
 		m(target, anchor) {
 			insert(target, div, anchor);
@@ -1681,7 +1681,7 @@ function create_if_block_1$1(ctx) {
 	};
 }
 
-// (221:4) {#if calendarVisible}
+// (263:4) {#if calendarVisible}
 function create_if_block$1(ctx) {
 	let div3;
 	let div2;
@@ -1772,20 +1772,20 @@ function create_if_block$1(ctx) {
 				each_blocks[i].c();
 			}
 
-			attr(button0, "class", "calendarArrowButton svelte-11hbmey");
-			attr(select, "class", "text-center w-full svelte-11hbmey");
+			attr(button0, "class", "calendarArrowButton svelte-19l68in");
+			attr(select, "class", "text-center w-full svelte-19l68in");
 			if (/*calendarMonth*/ ctx[6] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[25].call(select));
-			attr(button1, "class", "calendarArrowButton svelte-11hbmey");
-			attr(button2, "class", "calendarArrowButton svelte-11hbmey");
-			attr(input, "class", "text-center w-8 m-0 svelte-11hbmey");
+			attr(button1, "class", "calendarArrowButton svelte-19l68in");
+			attr(button2, "class", "calendarArrowButton svelte-19l68in");
+			attr(input, "class", "text-center w-8 m-0 svelte-19l68in");
 			attr(input, "type", "number");
 			attr(input, "min", "1900");
 			attr(input, "max", "2500");
-			attr(button3, "class", "calendarArrowButton svelte-11hbmey");
+			attr(button3, "class", "calendarArrowButton svelte-19l68in");
 			attr(div0, "class", "flex text-center bg-gray-50 px-1 p-0.5 border-b-2 border-blue-800");
 			attr(div1, "class", "inline-grid grid-cols-7 gap-0 font-mono ");
 			attr(div2, "class", "inline-flex flex-col border-blue-900 border-2 rounded");
-			attr(div3, "class", "calendar text-xs absolute shadow-md bg-gray-50 svelte-11hbmey");
+			attr(div3, "class", "calendar text-xs absolute shadow-md bg-gray-50 svelte-19l68in");
 		},
 		m(target, anchor) {
 			insert(target, div3, anchor);
@@ -1961,7 +1961,7 @@ function create_if_block$1(ctx) {
 	};
 }
 
-// (227:24) {#each monthLabels as monthLabel, i}
+// (269:24) {#each monthLabels as monthLabel, i}
 function create_each_block_2(ctx) {
 	let option;
 	let t_value = /*monthLabel*/ ctx[40] + "";
@@ -1987,7 +1987,7 @@ function create_each_block_2(ctx) {
 	};
 }
 
-// (238:20) {#each dayOfWeekLabels as dow, i}
+// (280:20) {#each dayOfWeekLabels as dow, i}
 function create_each_block_1(ctx) {
 	let div;
 	let t_value = /*dow*/ ctx[37][0] + "";
@@ -2011,7 +2011,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (241:20) {#each calendarDates as date}
+// (283:20) {#each calendarDates as date}
 function create_each_block(ctx) {
 	let button;
 	let t0_value = /*date*/ ctx[34].getDate() + "";
@@ -2037,7 +2037,7 @@ function create_each_block(ctx) {
 			? "calendarTodayDate"
 			: "") + "\n                            " + (/*dateValue*/ ctx[1] && /*dateValue*/ ctx[1].getTime() === /*date*/ ctx[34].getTime()
 			? "calendarSelectedDate"
-			: "") + "\n                        " + " svelte-11hbmey");
+			: "") + "\n                        " + " svelte-19l68in");
 		},
 		m(target, anchor) {
 			insert(target, button, anchor);
@@ -2059,7 +2059,7 @@ function create_each_block(ctx) {
 			? "calendarTodayDate"
 			: "") + "\n                            " + (/*dateValue*/ ctx[1] && /*dateValue*/ ctx[1].getTime() === /*date*/ ctx[34].getTime()
 			? "calendarSelectedDate"
-			: "") + "\n                        " + " svelte-11hbmey")) {
+			: "") + "\n                        " + " svelte-19l68in")) {
 				attr(button, "class", button_class_value);
 			}
 		},
@@ -2110,11 +2110,11 @@ function create_fragment$1(ctx) {
 			attr(input, "id", /*id*/ ctx[2]);
 			attr(input, "placeholder", /*displayFormat*/ ctx[3]);
 			attr(input, "type", "text");
-			attr(input, "class", "p-0.5 bg-white bg-opacity-0 svelte-11hbmey");
-			attr(span, "class", "absolute right-6 top-2 text-red-500 font-bold text-xs svelte-11hbmey");
-			attr(button, "class", "absolute right-0 top-0 p-1 rounded cursor-pointer border-opacity-0 border-2 border-blue-900 hover:border-opacity-100 hover:bg-blue-200 svelte-11hbmey");
+			attr(input, "class", "p-0.5 bg-white bg-opacity-0 svelte-19l68in");
+			attr(span, "class", "absolute right-6 top-2 text-red-500 font-bold text-xs");
+			attr(button, "class", "absolute right-0 top-0 p-1 rounded cursor-pointer border-opacity-0 border-2 border-blue-900 hover:border-opacity-100 hover:bg-blue-200");
 			attr(label, "for", /*id*/ ctx[2]);
-			attr(label, "class", label_class_value = "" + (/*_class*/ ctx[4] + " relative inline-flex border-blue-900 border-2 rounded w-auto" + " svelte-11hbmey"));
+			attr(label, "class", label_class_value = "" + (/*_class*/ ctx[4] + " relative inline-flex border-blue-900 border-2 rounded w-auto" + " svelte-19l68in"));
 			attr(div, "class", "inline-block");
 		},
 		m(target, anchor) {
@@ -2188,7 +2188,7 @@ function create_fragment$1(ctx) {
 				attr(label, "for", /*id*/ ctx[2]);
 			}
 
-			if (!current || dirty[0] & /*_class*/ 16 && label_class_value !== (label_class_value = "" + (/*_class*/ ctx[4] + " relative inline-flex border-blue-900 border-2 rounded w-auto" + " svelte-11hbmey"))) {
+			if (!current || dirty[0] & /*_class*/ 16 && label_class_value !== (label_class_value = "" + (/*_class*/ ctx[4] + " relative inline-flex border-blue-900 border-2 rounded w-auto" + " svelte-19l68in"))) {
 				attr(label, "class", label_class_value);
 			}
 
@@ -2287,25 +2287,6 @@ function instance$1($$self, $$props, $$invalidate) {
 
 	onMount(async () => {
 		parseTextValue();
-
-		let dates = [
-			"2021/01/04",
-			"2021/1/4",
-			"20210104",
-			"04/01/2021",
-			"4-1-2021",
-			"4/1/21",
-			"04-01",
-			"4/1",
-			"4",
-			"04"
-		];
-
-		for (let d of dates) {
-			console.log(d);
-			$$invalidate(0, textValue = d);
-			parseTextValue();
-		}
 	});
 
 	async function calendarDateSelected(date) {
@@ -2498,7 +2479,7 @@ function instance$1($$self, $$props, $$invalidate) {
 class DatePicker extends SvelteComponent {
 	constructor(options) {
 		super();
-		if (!document.getElementById("svelte-11hbmey-style")) add_css();
+		if (!document.getElementById("svelte-19l68in-style")) add_css();
 
 		init(
 			this,
